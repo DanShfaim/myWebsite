@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block content %}
+<h1>About Me:</h1>
+<div class="row">
+    <div class="col-xl-12">
+        <div id="shell">
+            <p><b>> Dan.origin </b></p>
+            <p>&emsp; => "Givat Zeev, Israel" </p>
+            <p><b>> Dan.education </b></p>
+            <p>&emsp; => "Ariel University" </p>
+            <p><b>> Dan.major </b></p>
+            <p>&emsp; => "Computer Science" </p>
+            <p><b>> Dan.interests </b></p>
+            <p>&emsp; => ["Code", "Coffee", "Music", "Soccer", "Shopping"] </p>
+            <p><b>> Dan.resume </b></p>
+            <p>&emsp; => "<a href="{% static 'files/DanShfaim.pdf' %}" target="_blank">DanShfaim.pdf</a>" </p>
+            <p><b>> Dan.email </b></p>
+            <p>&emsp; => "<a href="mailto:Danshfaim@gmail.com">DanShfaim@gmail.com</a>" </p>
+
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

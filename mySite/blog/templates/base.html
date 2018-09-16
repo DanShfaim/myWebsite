@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DanShfaim.com</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Russo+One" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body style="background-image:url({% static 'icons/back.jpg' %});">
+<div class="container-fluid">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="{% url 'index' %}">Main</a>
+            </div>
+
+                <ul class="nav navbar-nav">
+
+                        <li><a href="{% url 'about' %}">About</a></li>
+                        <li><a href="{% url 'resume' %}">Resume</a></li>
+                        <li><a href="{% url 'projects' %}">Projects</a></li>
+                        <li><a href="{% url 'contact' %}">Contact</a></li>
+
+                </ul>
+
+        </nav>
+        <div class="all">
+                <div class="row">
+                  <div class="col-sm-3">
+                      <div class="side-bar">
+                          <img id="me" src="{% static 'icons/me.jpg' %}">
+                          <div class="row">
+                                  <div class="col-xl-4"></div>
+                                  <div class="col-xl-4">
+                                      <a href="https://www.linkedin.com/in/dan-shfaim-20092913b/" target="_blank"><img class="icon" src="{% static 'icons/linkedicon.png' %}" alt="linked"></a>
+                                      <a href="https://github.com/DanShfaim" target="_blank"><img class="icon" src="{% static 'icons/giticon.png' %}" alt="git"></a>
+                                      <a href="skype:DanShfaim@gmail.com?userinfo"><img class="icon" src="{% static 'icons/skyicon.png' %}" alt="skype"></a>
+                                  </div>
+                          </div>
+                          <hr>
+                          <p>Name: Dan Shfaim</p><hr>
+                          <p>BirthDay: 1 June 1992</p><hr>
+                          <p>e-Mail: <a href="mailto:Danshfaim@gmail.com">DanShfaim@gmail.com</a></p><hr>
+                          <a href="{% static 'files/DanShfaim.pdf' %}" target="_blank"><button type="button" class="btn btn-default btn-sm">
+                            <span class="glyphicon glyphicon-download-alt"></span> Download My CV
+                          </button></a>
+
+                      </div>
+                  </div>
+                  <div class="col-sm-9">
+                      <div class="content">
+                        {% block content %}
+                        {% endblock %}
+                      </div>
+                  </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

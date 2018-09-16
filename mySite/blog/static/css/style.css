@@ -1,0 +1,53 @@
+body{
+   background-attachment: fixed;
+   background-size: cover;
+}
+nav{
+    font-family: 'Russo One';
+}
+.side-bar{
+    padding: 10px 10px 10px 10px;
+    background-color: #7d9cce;
+    border-style: solid;
+    border-width: 1px;
+    border-radius : 10px;
+    text-align: center;
+    font-family: 'Russo One';
+}
+.content{
+    padding: 10px 40px 10px 50px;
+    background-color: #7d9cce;
+    border-style: solid;
+    border-width: 1px;
+    border-radius : 10px;
+    font-family: 'Russo One';
+}
+#me{
+    width: 150px;
+    height: 150px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius : 50%;
+    margin-bottom : 10px;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+}
+
+.all{
+    margin-top : 60px;
+}
+#shell{
+    width: 600px;
+    height: 650px;
+    background-color: #000000;
+    padding : 10px 10px 10px 10px;
+    align : center;
+    border-radius : 10px;
+}
+#shell p{
+    color:white;
+    font-family: "Courier New", Courier, monospace;
+
+}
