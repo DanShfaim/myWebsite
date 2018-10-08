@@ -23,9 +23,9 @@ TEMPLATE_DIR = os.path.join(BASE_DIR,'blog/templates')
 SECRET_KEY = '(xx=)s1h-38^bcbbapbp7m^dashd07+0nsh=b(qwmb(bqvbm+d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['danshfaim.pythonanywhere.com']
 
 
 # Application definition
